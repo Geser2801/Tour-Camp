@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+    <EditText
+        android:id="@+id/txt_Nombre_Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/txt_ApellidoP_Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_Nombre_Perfil"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/txt_ApellidoM_Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_below="@+id/txt_ApellidoP_Perfil"/>
+
+    <EditText
+        android:id="@+id/txt_Genero_Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_ApellidoM_Perfil"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/txt_Email_Perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_Genero_Perfil"
+        android:textSize="30sp"/>
+        -->
+
+    <TextView
+        android:id="@+id/txt_Datos_Generales_Cuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datos generales de la cuenta"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Datos_Perfil_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/trans"
+        app:cardCornerRadius="40dp"
+        app:cardElevation="0dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/txt_Datos_Generales_Cuenta">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btn_Editar_Perfil"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="@drawable/vector_editar_datos_perfil" />
+
+            <TextView
+                android:id="@+id/txt_Nombre_Perfil_Descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txt_Nombre_Perfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/caja_texto_datos_user"
+                android:hint="Nombre"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/txt_Nombre_Perfil_Descripcion"/>
+
+            <TextView
+                android:id="@+id/txt_ApellidoP_Perfil_Descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Paterno"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/txt_Nombre_Perfil"/>
+
+            <EditText
+                android:id="@+id/txt_ApellidoP_Perfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/caja_texto_datos_user"
+                android:hint="Apellido Paterno"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/txt_ApellidoP_Perfil_Descripcion"/>
+
+            <TextView
+                android:id="@+id/txt_ApellidoM_Perfil_Descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apellido Materno"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/txt_ApellidoP_Perfil"/>
+
+            <EditText
+                android:id="@+id/txt_ApellidoM_Perfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/caja_texto_datos_user"
+                android:hint="Apellido Materno"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/txt_ApellidoM_Perfil_Descripcion"/>
+
+            <TextView
+                android:id="@+id/txt_Genero_Descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Genero"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/txt_ApellidoM_Perfil"/>
+
+            <EditText
+                android:id="@+id/txt_Genero_Perfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/caja_texto_datos_user"
+                android:hint="Genero"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/txt_Genero_Descripcion"/>
+
+            <TextView
+                android:id="@+id/txt_Correo_Descripcion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:layout_below="@+id/txt_Genero_Perfil"/>
+
+            <EditText
+                android:id="@+id/txt_Email_Perfil"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@drawable/caja_texto_datos_user"
+                android:hint="Correo"
+                android:textDirection="anyRtl"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:layout_margin="15dp"
+                android:layout_below="@+id/txt_Correo_Descripcion"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--
+    <Button
+        android:id="@+id/btn_Editar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="Editar"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/card_Datos_Perfil_User"/>
+    -->
+
+    <Button
+        android:id="@+id/btn_Guardar_Datos_User"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_btn_guarda_perfil_user"
+        app:backgroundTint="@null"
+        android:text="Guardar cambios"
+        android:background="@drawable/btn_guardar_session_perfil_user"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_Cerrar_Sesion"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@null"
+        android:text="Cerrar Sesión"
+        android:drawableStart="@drawable/ic_btn_cerrar_session_perfil_user"
+        android:background="@drawable/btn_cerrar_session_perfil_user"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

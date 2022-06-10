@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.Becan"
+    android:background="@drawable/bra">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/becan" />
+
+
+    <RelativeLayout
+        android:layout_width="378dp"
+        android:layout_height="555dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/arrego">
+
+
+        <TextView
+            android:layout_width="330dp"
+            android:layout_height="188dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="331dp"
+            android:justificationMode="inter_word"
+            android:text="El nombre del sitio se debe a la antigua existencia de una planta llamada “cola de gato” (xpuh, en maya yucateco); il es un sufijo que indica “lugar de”). La planta crecía alrededor de una aguada hoy prácticamente desaparecida por el crecimiento urbano."
+            android:textColor="@color/black"
+            android:textSize="16dp"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="49dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="96dp"
+            android:layout_marginBottom="308dp"
+            android:gravity="center"
+            android:justificationMode="inter_word"
+            android:text="HORARIOS DE VISITA"
+            android:textColor="@color/black"
+            android:textSize="20dp"></TextView>
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="325dp"
+            android:layout_height="333dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="-12dp"
+            app:srcCompat="@drawable/hora" />
+
+    </RelativeLayout>
+</RelativeLayout>

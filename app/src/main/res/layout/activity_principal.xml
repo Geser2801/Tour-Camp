@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+    <include
+        android:id="@+id/toolbar_Principal"
+        layout="@layout/toolbar_principal"/>
+    -->
+
+    <FrameLayout
+        android:id="@+id/visor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/navegacion">
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navegacion"
+        style="@style/style_navigation_view"
+        android:background="@drawable/background_barra_navegacion_view"
+        app:itemTextColor="@color/color_nav"
+        app:menu="@menu/menu_opciones_principal_fr">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Add_Metodo_Pago"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:text="Agregar un metodo de pago"
+        android:textColor="@color/black"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:backgroundTint="@null"
+        android:background="@drawable/btn_add_metodo_pago"/>
+
+
+</RelativeLayout>

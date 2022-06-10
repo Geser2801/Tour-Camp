@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:id="@+id/txt_Lugares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lugares"
+        android:textSize="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txt_Sitios_C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sitios Turisticos de Calakmul"
+        android:textSize="25dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txt_Lugares"
+        android:layout_centerHorizontal="true"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_Maps_Anim"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_maps_anim"
+        android:layout_below="@id/txt_Sitios_C"/>
+
+    <!-- FONDO DE IMAGEN #515a5a -->
+    <ImageView
+        android:id="@+id/img_Fondo_Base_Maps"
+        android:layout_width="315dp"
+        android:layout_height="377dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_rectangulo_base_fondo_maps_fragment"
+        android:layout_below="@+id/lottie_Maps_Anim"/>
+
+    <TextView
+        android:id="@+id/txt_Info_Maps_Descripcion_Visitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_txt_Descripcion_Maps_Fragments_Lugares"
+        android:textSize="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txt_Info_Maps_Descripcion_Atraccion" />
+
+    <TextView
+        android:id="@+id/txt_Info_Maps_Descripcion_Atraccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_txt_Descripcion_Maps_Fragments_Atracciones"
+        android:textSize="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/txt_Info_Maps_Descripcion_Restaurant" />
+
+    <TextView
+        android:id="@+id/txt_Info_Maps_Descripcion_Restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/str_txt_Descripcion_Maps_Fragments_Restaurantes"
+        android:textSize="30dp"
+        android:layout_marginBottom="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/img_View_Maps_Linea" />
+
+    <ImageView
+        android:id="@+id/img_View_Maps_Linea"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/recicler_Maps"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/ic_rectangulo_view_fondo_maps_fragment"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recicler_Maps"
+        android:layout_width="310dp"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:scrollbars="vertical"
+        android:layout_marginBottom="90dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="#515A5A"
+        tools:itemCount="17"
+        tools:listitem="@layout/items_maps_calakmul_sitios"/>
+
+</RelativeLayout>

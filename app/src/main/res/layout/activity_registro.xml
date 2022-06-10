@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_registro"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:id="@+id/contenedor_Datos_Registro_Re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- BOTON DE REGRESAR -->
+            <Button
+                android:id="@+id/btn_Regresar_Login"
+                style="@style/style_btn_Regresar_Login"
+                android:background="@drawable/ic_back"/>
+
+            <!-- TITULO -->
+            <TextView
+                android:id="@+id/txt_Titulo_Registro"
+                style="@style/style_title_text_Registro"
+                android:text="@string/str_txt_Registrarse"/>
+
+            <!-- IMAGEN LOGO -->
+            <ImageView
+                android:id="@+id/img_Logo_Registro"
+                style="@style/style_Img_Registro"
+                android:layout_below="@id/txt_Titulo_Registro"
+                android:src="@drawable/ic_fondo_registro_plantilla"/>
+
+            <LinearLayout
+                android:id="@+id/contenedor_Datos_Registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img_Logo_Registro"
+                android:orientation="vertical">
+
+                <!-- CAMPO NOMBRE -->
+                <EditText
+                    android:id="@+id/txt_Nombre_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:hint="@string/str_txt_Nombre_Registro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:inputType="textPersonName"/>
+
+                <!-- CAMPO APELLIDO PATERNO -->
+                <EditText
+                    android:id="@+id/txt_ApellidoP_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="@string/str_txt_ApellidoP"
+                    android:inputType="textPersonName"/>
+
+                <!-- CAMPO APELLIDO MATERNO -->
+                <EditText
+                    android:id="@+id/txt_ApellidoM_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="@string/str_txt_ApellidoM"
+                    android:inputType="textPersonName"/>
+
+                <!-- CAMPO TEXTO GENERO -->
+                <TextView
+                    android:id="@+id/txt_Genero_Registro"
+                    style="@style/style_TextoGenero"
+                    android:text="@string/str_txt_Genero"/>
+
+                <!-- CREAMOS UN LAYOUT DE TIPO RADIOGROUP, CAMPO GENERO -->
+                <RadioGroup
+                    android:id="@+id/rb_Groud_Genero_Registro"
+                    style="@style/style_Radio_Group_Genero">
+
+                    <!-- GENERO MASCULINO -->
+                    <RadioButton
+                        android:id="@+id/rb_Masculino_Registro"
+                        style="@style/rb_F_M"
+                        android:text="@string/str_rb_Masculino" />
+
+                    <!-- GENERO FEMENINO -->
+                    <RadioButton
+                        android:id="@+id/rb_Femenino_Registro"
+                        style="@style/rb_F_M"
+                        android:text="@string/str_rb_Femenino" />
+                </RadioGroup>
+
+                <!-- CAMPO EMAIL -->
+                <EditText
+                    android:id="@+id/txt_Email_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="@string/str_txt_Email_Registro"
+                    android:inputType="textEmailAddress"/>
+
+                <!-- CAMPO CONTRASEÑA -->
+                <EditText
+                    android:id="@+id/txt_Contrasenia_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="@string/str_txt_Contraseña_Registro"
+                    android:inputType="textPassword"/>
+
+                <!-- CAMPO CONFIRMAR CONTRASEÑA -->
+                <EditText
+                    android:id="@+id/txt_Confirmar_Contrasenia_Registro"
+                    style="@style/style_cajaTextosRegistro"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="@string/str_txt_Confirmar_Contraseña_Registro"
+                    android:inputType="textPassword"/>
+
+                <!-- BOTON DE GUARDAR Y/O REGISTRARSE -->
+                <Button
+                    android:id="@+id/btn_Registrarse_Registro"
+                    style="@style/btn_Estilo_Registro"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@null"
+                    android:background="@drawable/btn_registro"
+                    android:text="@string/str_txt_Registrarse"/>
+            </LinearLayout>
+
+            <!-- TEXTO DE TERMINOS Y CONDICIONES -->
+            <TextView
+                android:id="@+id/txt_Term_Condi_Registro"
+                style="@style/txt_Terminos_Condiciones"
+                android:layout_below="@+id/contenedor_Datos_Registro"
+                android:text="" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

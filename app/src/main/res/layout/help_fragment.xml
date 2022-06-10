@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toolbar_principal_help"
+        style="@style/tool_bar_sencillo_help"
+        android:text="@string/str_txt_Help_ToolBar" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_Settings_Anim"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="1dp"
+        android:layout_alignParentRight="true"
+        app:lottie_rawRes="@raw/lottie_help_anim"/>
+
+    <ScrollView
+        android:id="@+id/desplazable_Help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_principal_help">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt_Centro_Ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centro de Ayuda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:id="@+id/txt_Hola_Ayuda"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hola, ¿en qué podemos ayudarte?"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"
+                android:layout_below="@+id/txt_Centro_Ayuda"/>
+
+            <TextView
+                android:id="@+id/txt_Articulos_Populares"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_Hola_Ayuda"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:text="Artículos populares"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <GridLayout
+                android:id="@+id/grd_Crear_Cuenta_Help"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_below="@id/txt_Articulos_Populares">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Crear_Cuenta_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="#808B96"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_Crear_Cuenta_Help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_Crear_Cuenta_Help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Guía de inicio    >    Crear una cuenta"
+                            android:textColor="#CACFD2"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Cear_Cuenta_Help_Descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Crear_Cuenta_Help"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Crear una cuenta"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/grd_Inicio_Sesion_Help"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_below="@id/grd_Crear_Cuenta_Help">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Inicio_Sesion_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="#808B96"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="8dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_Inicio_Sesion_Help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_Inicio_Sesion_Help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Guía de inicio    >    Inicio de sesión"
+                            android:textColor="#CACFD2"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Inicio_Sesion_Help_Descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Inicio_Sesion_Help"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Inicio de sesión"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/grd_Solucion_Problema_Help"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_below="@id/grd_Inicio_Sesion_Help">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Solucion_Problema_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="#808B96"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_Solucion_Problema_Help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txt_Solucion_Problema_Help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="8dp"
+                            android:text="Inicio de sesión    >    Solución de problemas"
+                            android:textColor="#CACFD2"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Solucion_Problema_Help_Descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Solucion_Problema_Help"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Solución de problemas"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/txt_Temas_Help"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temas"
+                android:textSize="45dp"
+                android:textStyle="bold"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/grd_Solucion_Problema_Help"/>
+
+            <GridLayout
+                android:id="@+id/grd_Guia_Inicio_Help"
+                android:layout_width="match_parent"
+                android:layout_height="145sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_below="@id/txt_Temas_Help">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Guia_Inicio_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="#808B96"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_Guia_Inicio_Help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_Guia_Inicio_Help"
+                            android:layout_width="35sp"
+                            android:layout_height="35sp"
+                            android:src="@drawable/ic_guia_rapida_help_f"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_Guia_Inicio_Help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Guía de inicio"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Guia_Inicio_Help_Descripcion_Config"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Guia_Inicio_Help"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Configurar tu perfil"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_Guia_Inicio_Help_Descripcion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Guia_Inicio_Help_Descripcion_Config"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Para ti"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <GridLayout
+                android:id="@+id/grd_Ajustes_Cuenta_Privacidad_Help"
+                android:layout_width="match_parent"
+                android:layout_height="145sp"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:columnCount="1"
+                android:rowCount="1"
+                android:layout_below="@id/grd_Guia_Inicio_Help">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card_Ajustes_Cuenta_Privacidad_Help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="0"
+                    android:layout_columnWeight="1"
+                    android:layout_gravity="fill"
+                    app:cardBackgroundColor="#808B96"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="15dp">
+
+                    <RelativeLayout
+                        android:id="@+id/rtl_Ajustes_Cuenta_Privacidad_Help"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/img_Ajustes_Cuenta_Privacidad_Help"
+                            android:layout_width="35sp"
+                            android:layout_height="35sp"
+                            android:src="@drawable/ic_ajustes_cuenta_privacy_help_f"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"/>
+
+                        <TextView
+                            android:id="@+id/txt_Ajustes_Cuenta_Privacidad_Help"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Ajustes de la cuenta y privacidad"
+                            android:textColor="@color/black"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_Ajustes_Cuenta_Privacidad_Help_Descripcion_Datos_Cuenta"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Ajustes_Cuenta_Privacidad_Help"
+                            android:layout_marginTop="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Datos de la cuenta"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                        <TextView
+                            android:id="@+id/txt_Ajustes_Cuenta_Privacidad_Help_config"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_Ajustes_Cuenta_Privacidad_Help_Descripcion_Datos_Cuenta"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginLeft="15dp"
+                            android:text="Ajustes de privacidad de la cuenta"
+                            android:textColor="@color/black"
+                            android:textSize="15sp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android/TourCamp/app/src/main/res/drawable/ic_help.xml" value="0.109" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/activity_main.xml" value="0.1314596554850408" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/activity_principal.xml" value="0.22" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/help_fragment.xml" value="0.1314596554850408" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/home_activity.xml" value="0.1314596554850408" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/home_fragment.xml" value="0.1314596554850408" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/layout/settings_fragment.xml" value="0.1314596554850408" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/menu/menu_opciones_principal_f.xml" value="0.1675929884566054" />
+        <entry key="..\:/Android/TourCamp/app/src/main/res/menu/menu_opciones_principal_fr.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/activity_becan.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/activity_compra_boleto.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/activity_informatio_xpujil.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/activity_sitio_calakmul.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/activity_zonas_calakmul.xml" value="0.1675929884566054" />
+        <entry key="..\:/Users/Geser Euan/Desktop/TourCamp/app/src/main/res/layout/home_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/arrego.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/background_barra_navegacion_view.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/background_sitio_calakmul.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/background_zona_calakmul.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/btn_add_metodo_pago.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/btn_guardar_session_perfil_user.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/btn_iniciar_session_facebbok.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/btn_iniciar_session_google.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/item_selec_barra_navegacion_view.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/superior.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable-v24/vector_editar_datos_perfil.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/background_galerias_calakmul.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/background_home_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/background_login.xml" value="0.1285" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/background_registro.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/btn_cerrar_session_perfil_user.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/btn_iniciar_session.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/btn_registro.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/caja_texto_datos_compra.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/caja_texto_datos_user.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/fondo_edith_text_perfil_user.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_back.xml" value="0.1105" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_email.xml" value="0.1285" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_help.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_home.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_location_on.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_location_on_pressed.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/ic_pass.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/item_selector_pressed_maps.xml" value="0.1115" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/radio_caja_texto_login.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/radio_caja_texto_login_registro.xml" value="0.1285" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/radio_caja_texto_registro.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/vector_action_bar.xml" value="0.1285" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/vector_action_bar_login.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/drawable/vector_action_bar_registro.xml" value="0.136" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_compra_boleto.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_galerias_calakmul.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_informatio_xpujil.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_juegos_disponibles.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_maps.xml" value="0.1" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_metodo_pago.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_perfil_user.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_principal.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_registro.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_restaurantes_calakmul.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_sitio_calakmul.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_tic_tac_toe.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/activity_zonas_calakmul.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/agregar_metodo_pago_dialog_fragment.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/fragment_agregar_metodo_pago_dialog.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/help_fragment.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/home_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/items_maps_calakmul_sitios.xml" value="0.1" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/maps_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/maps_fragments.xml" value="0.1" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/settings_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/layout/toolbar_principal.xml" value="0.22" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/menu/menu_opciones.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/menu/menu_opciones_principal.xml" value="0.16354166666666667" />
+        <entry key="..\:/Users/rodri/AndroidStudioProjects/TourCamp/app/src/main/res/menu/menu_opciones_principal_fr.xml" value="0.13424540401881147" />
+        <entry key="..\:/Users/rodri/Documents/nuevoAndroid/TourCamp/app/src/main/res/layout/activity_registro.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.16666666666666666" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

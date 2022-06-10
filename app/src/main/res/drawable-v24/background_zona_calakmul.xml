@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/color_fondo_card_home">
+    </item>
+
+    <item android:drawable="@drawable/ic_fondo_zonas_calakmul"/>
+
+</layer-list>

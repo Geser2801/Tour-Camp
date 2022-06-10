@@ -1,0 +1,134 @@
+<resources>
+    <string name="app_name">Tour Camp</string>
+
+    <!-- CLIENTE DE AUTENTICACION DE GOOGLE POR FIREBASE -->
+    <string name="web_client_id">617772531921-d509ufnc49kupit4ukemufo5dlbs4mam.apps.googleusercontent.com</string>
+
+    <!-- INICIO DE SPLASHSCREEN -->
+    <!-- NOMBRE PARA EL TEXTO, FROM DE SPLASH -->
+    <string name="str_txt_from">from</string>
+
+    <!-- NOMBRE PARA EL TEXTO, BETA DE SPLASH -->
+    <string name="str_txt_Beta">Beta</string>
+    <!-- FIN DE SPLASHSCREEN -->
+
+
+    <!-- INICIO VENTANA DE LOGIN -->
+    <!--NOMBRE O TITULO-->
+    <string name="str_txt_iniciarS">Iniciar Sesión</string>
+
+    <!-- NOMBRE PARA EL CAMPO, EMAIL -->
+    <string name="str_txt_Email">Email</string>
+
+    <!-- NOMBRE PARA EL CAMPO, CONTRASEÑA -->
+    <string name="str_txt_Contraseña">Contraseña</string>
+
+    <!-- NOMBRE PARA EL BOTON, ENTRAR -->
+    <string name="str_txt_Entrar">Iniciar Sesion</string>
+
+    <!-- TITULO DE REGISTRATE AQUI -->
+    <string name="txt_Registrate_Aqui">Registrate Aqui</string>
+
+    <!-- TITULO DE NO TIENES CUENTA -->
+    <string name="txt_No_Tienes_Cuenta">Si no tienes una cuenta, registrate aqui</string>
+    <!-- FIN VENTANA DE LOGIN -->
+
+
+    <!-- INICIO VENTANA DE REGISTRO -->
+    <!-- NOMBRE PARA EL CAMPO, NOMBRE -->
+    <string name="str_txt_Nombre_Registro">Nombre</string>
+
+    <!-- NOMBRE PARA EL CAMPO, APELLIDO PATERNO-->
+    <string name="str_txt_ApellidoP">Apellido Paterno</string>
+
+    <!-- NOMBRE PARA EL CAMPO, APELLIDO MATERNO -->
+    <string name="str_txt_ApellidoM">Apellido Materno</string>
+
+    <!-- NOMBRE PARA EL CAMPO, TEXTO GENERO -->
+    <string name="str_txt_Genero">Genero</string>
+
+    <!-- NOMBRE PARA EL CAMPO, GENERO MASCULINO -->
+    <string name="str_rb_Masculino">Masculino</string>
+
+    <!-- NOMBRE PARA EL CAMPO, GENERO FEMENINO -->
+    <string name="str_rb_Femenino">Femenino</string>
+
+    <!-- NOMBRE PARA EL CAMPO, EMAIL -->
+    <string name="str_txt_Email_Registro">Email</string>
+
+    <!-- NOMBRE PARA EL CAMPO, CONTRASEÑA -->
+    <string name="str_txt_Contraseña_Registro">Contraseña</string>
+
+    <!-- NOMBRE PARA EL CAMPO, CONFIRMAR CONTRASEÑA -->
+    <string name="str_txt_Confirmar_Contraseña_Registro">Confirmar Contraseña</string>
+
+    <!-- NOMBRE PARA EL BOTON, REGISTRATE  -->
+    <string name="str_txt_Registrarse">Registrate</string>
+
+    <!-- NOMBRE PARA EL TEXTO DE TERMINOS Y CONDICIONES -->
+    <string name="str_txt_Term_Condi">Al registrarte aceptas que te robemos todos tus datos con nuestra app :v</string>
+    <!-- FIN VENTANA DE REGISTRO -->
+
+
+    <!-- INICIO DE LA VENTANA PRINCIPAL -->
+    <!-- FIN DE LA VENTANA PRINCIPAL -->
+
+
+    <!-- INICIO DE LA VENTANA FRAGMENTS HOME -->
+    <!-- NOMBRE PARA EL TEXTO DEL PERFIL -->
+    <string name="str_txt_Perfil_User">Perfil</string>
+
+    <!-- NOMBRE PARA EL TEXTO DE DESCRIPCION DEL PERFIL -->
+    <string name="str_txt_Perfil_User_Descripcion">• Perfil de usuario</string>
+    <!-- FIN DE LA VENTANA FRAGMENTS HOME -->
+
+
+    <!-- INICIO DE LA VENTANA FRAGMENTS MAPS -->
+    <!-- TEXTO DE LUGARES DE VISITA -->
+    <string name="str_txt_Descripcion_Maps_Fragments_Lugares">
+        <p> Lugares de Visitas </p>
+    </string>
+
+    <!-- TEXTO DE ATRACCIONES -->
+    <string name="str_txt_Descripcion_Maps_Fragments_Atracciones">
+        <p> Atracciones o juegos </p>
+    </string>
+
+    <!-- TEXTO DE RESTAURANTES -->
+    <string name="str_txt_Descripcion_Maps_Fragments_Restaurantes">
+        <p> Restaurantes </p>
+    </string>
+    <!-- FIN DE LA VENTANA FRAGMENTS MAPS -->
+
+
+    <!-- INICIO DE LA VENTANA FRAGMENTS SETTINGS -->
+    <!-- TEXTO DE TITULO DE LA BARRA DE ACCION DE AJUSTES -->
+    <string name="str_txt_Settings_ToolBar">Ajustes</string>
+    <!-- FIN DE LA VENTANA FRAGMENTS SETTINGS -->
+
+
+    <!-- INICIO DE LA VENTANA FRAGMENTS HELP -->
+    <!-- TEXTO DE TITULO DE LA BARRA DE ACCION DE AYUDA -->
+    <string name="str_txt_Help_ToolBar">Ayuda</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <!-- FIN DE LA VENTANA FRAGMENTS HELP -->
+
+
+    <!-- INICIO DE LA VENTANA GALERIAS CALAKMUL -->
+    <string name="str_Texto">
+        <h5 align="justify">Calakmul fue descubierta a principios de la década de los 30 del siglo pasado, pero es hasta la década de los 80 que las investigaciones sistemáticas permiten descubrirla esencia de esta ciudad como una de las más importantes del Clásico Maya.</h5>
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- FIN DE LA VENTANA GALERIAS CALAKMUL -->
+
+    <!---->
+    <string name="TicTacToe">TicTacToe</string>
+    <string name="grid">grid</string>
+    <string name="status">status</string>
+    <string name="jugador_o">Jugador O</string>
+    <string name="jugador_x">Jugador X</string>
+    <!---->
+
+</resources>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/toolbar_principal_settings"
+        style="@style/tool_bar_sencillo_settings"
+        android:text="@string/str_txt_Settings_ToolBar" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_Settings_Anim"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_margin="1dp"
+        android:layout_alignParentRight="true"
+        app:lottie_rawRes="@raw/lottie_settings_anim"/>
+
+    <TextView
+        android:id="@+id/txt_Cuenta_User_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuenta"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/toolbar_principal_settings"/>
+
+    <GridLayout
+        android:id="@+id/grd_Ajustes_Perfil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:layout_below="@id/txt_Cuenta_User_Label">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Ajustes_Perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/color_fondo_card_settings"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rtl_Ajustes_Perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_Ajustes_Perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_perfil_user" />
+
+                <TextView
+                    android:id="@+id/txt_Ajustes_Perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/img_Ajustes_Perfil"
+                    android:text="@string/str_txt_Perfil_User"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_Ajustes_Perfil_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Ajustes_Perfil"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/img_Ajustes_Perfil"
+                    android:text="@string/str_txt_Perfil_User_Descripcion"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <View
+        android:id="@+id/divider_Perfil"
+        style="@style/view_divider_settings"
+        android:layout_below="@+id/grd_Ajustes_Perfil">
+    </View>
+
+    <TextView
+        android:id="@+id/txt_Informe_User_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe de errores"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/divider_Perfil"/>
+
+    <GridLayout
+        android:id="@+id/grd_Informe_Perfil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:layout_below="@id/txt_Informe_User_Label">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_Informe_Ajustes_Perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/color_fondo_card_settings"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rtl_Informe_Ajustes_Perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_Informe_Ajustes_Perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_bug_settings" />
+
+                <TextView
+                    android:id="@+id/txt_Informe_Ajustes_Perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/img_Informe_Ajustes_Perfil"
+                    android:text="Informe de errores"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_Informe_Ajustes_Perfil_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_Informe_Ajustes_Perfil"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/img_Informe_Ajustes_Perfil"
+                    android:text="• Informar de un problema"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <View
+        android:id="@+id/divider_Informe"
+        style="@style/view_divider_settings"
+        android:layout_below="@+id/grd_Informe_Perfil">
+    </View>
+
+    <TextView
+        android:id="@+id/txt_AcercaDe_User_Label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acerca de"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/divider_Informe"/>
+
+    <GridLayout
+        android:id="@+id/grd_AcercaDe_Perfil"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="10dp"
+        android:columnCount="1"
+        android:rowCount="1"
+        android:layout_below="@id/txt_AcercaDe_User_Label">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_AcercaDe_Perfil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            app:cardBackgroundColor="@color/color_fondo_card_settings"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="8dp">
+
+            <RelativeLayout
+                android:id="@+id/rtl_AcercaDe_Perfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_AcercaDe_Perfil"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/ic_ayuda_settings" />
+
+                <TextView
+                    android:id="@+id/txt_AcercaDe_Perfil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/img_AcercaDe_Perfil"
+                    android:text="Acerca de"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_AcercaDe_Perfil_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_AcercaDe_Perfil"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/img_AcercaDe_Perfil"
+                    android:text="• Politicas y privacidad"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+    <!--
+    <Button
+        android:id="@+id/btn_Perfil_User"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grd_Ajustes_Perfil"
+        android:textSize="20sp"
+        android:text="Ir perfil de Usuario"
+        android:layout_centerHorizontal="true"/>
+        -->
+
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="str_Items_Sitios_Calakmul">
+        <item>Calakmul</item>
+        <item>Zona Arqueológica de Becán</item>
+        <item>Zona Arqueológica Xpuhil</item>
+        <item>Zona Arqueológica de Balamkú</item>
+        <item>Zona Arqueológica de Hormiguero</item>
+    </string-array>
+</resources>

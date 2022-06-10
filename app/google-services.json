@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "617772531921",
+    "project_id": "tour-camp",
+    "storage_bucket": "tour-camp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617772531921:android:bd5667f741990e849005f0",
+        "android_client_info": {
+          "package_name": "com.rodr.tourcamp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617772531921-d509ufnc49kupit4ukemufo5dlbs4mam.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATm--ViSQvLEHhHvz7CD9V4zVUfu0HuEw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "617772531921-d509ufnc49kupit4ukemufo5dlbs4mam.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

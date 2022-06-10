@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7B7D7D">
+    <!--
+        Id
+        Nombre
+        ApellidoP
+        ApellidoM
+        Nacionalidad
+        Sitio
+        Fecha
+        Hora
+        MetodoPago
+    -->
+
+
+    <ScrollView
+        android:id="@+id/contenedor_Datos_Compra_Boleto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rlt_Contenedor_Datos_Compra_Boleto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- BOTON DE REGRESAR -->
+            <Button
+                android:id="@+id/btn_Regresar_Zonas_Ar_Calakmul"
+                style="@style/style_btn_Regresar_Compra"
+                android:background="@drawable/ic_back"/>
+
+            <!-- TITULO -->
+            <TextView
+                android:id="@+id/txt_Titulo_Compra_Boleto"
+                style="@style/style_title_text_Compra_Boleto"
+                android:text="Comprar Boleto" />
+
+            <!-- IMAGEN LOGO LOTTIE -->
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottie_Ticket_Anim"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_centerHorizontal="true"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/lottie_ticket_anim"
+                android:layout_below="@id/txt_Titulo_Compra_Boleto"/>
+
+            <LinearLayout
+                android:id="@+id/contenedor_Datos_Registro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/lottie_Ticket_Anim"
+                android:orientation="vertical">
+
+                <!-- TEXTO NOMBRE -->
+                <TextView
+                    android:id="@+id/txt_Nombre_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nombre"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO NOMBRE -->
+                <EditText
+                    android:id="@+id/txt_Nombre_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:hint="@string/str_txt_Nombre_Registro"
+                    android:background="@drawable/caja_texto_datos_compra"
+                    android:inputType="textPersonName"/>
+
+                <!-- TEXTO APELLIDO PATERNO -->
+                <TextView
+                    android:id="@+id/txt_ApellidoP_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido Paterno"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO APELLIDO PATERNO -->
+                <EditText
+                    android:id="@+id/txt_ApellidoP_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:background="@drawable/caja_texto_datos_compra"
+                    android:hint="@string/str_txt_ApellidoP"
+                    android:inputType="textPersonName"/>
+
+                <!-- TEXTO APELLIDO MATERNO -->
+                <TextView
+                    android:id="@+id/txt_ApellidoM_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apellido Materno"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO APELLIDO MATERNO -->
+                <EditText
+                    android:id="@+id/txt_ApellidoM_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:background="@drawable/caja_texto_datos_compra"
+                    android:hint="@string/str_txt_ApellidoM"
+                    android:inputType="textPersonName"/>
+
+                <!-- TEXTO NACIONALIDAD -->
+                <TextView
+                    android:id="@+id/txt_Nacionalidad_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nacionalidad"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO NACIONALIDAD -->
+                <EditText
+                    android:id="@+id/txt_Nacionalidad_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:background="@drawable/caja_texto_datos_compra"
+                    android:hint="Nacionalidad"
+                    android:inputType="text"/>
+
+                <!-- TEXTO SELECCION DE SITIOS -->
+                <TextView
+                    android:id="@+id/txt_Sitios_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccione el sitio tusristico a ir"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO SITIO -->
+                <Spinner
+                    android:id="@+id/cbx_Sitio_Compra_Boleto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:backgroundTint="@null"
+                    android:layout_marginLeft="5dp"
+                    android:backgroundTint="@color/black"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/str_Items_Sitios_Calakmul"/>
+
+                <!-- TEXTO SELECCION DE FECHA -->
+                <TextView
+                    android:id="@+id/txt_Fecha_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccione la fecha de viaje"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CONTENEDOR DE FECHA -->
+                <LinearLayout
+                    android:id="@+id/lnr_Fecha_Compra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_Fecha_Compra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        app:backgroundTint="@null"
+                        android:background="@color/zxing_transparent"
+                        android:src="@drawable/ic_calendar_compra"/>
+
+                    <EditText
+                        android:id="@+id/txt_Fecha_Compra"
+                        style="@style/style_cajaTextos_Compra_Boleto_Fecha_Hora"
+                        android:background="@drawable/caja_texto_datos_compra"
+                        android:hint="Fecha"
+                        android:enabled="false"/>
+                </LinearLayout>
+
+                <!-- TEXTO SELECCION DE HORA -->
+                <TextView
+                    android:id="@+id/txt_Hora_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seleccione la hora de viaje"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CONTENEDOR DE HORA -->
+                <LinearLayout
+                    android:id="@+id/lnr_Hora_Compra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <ImageButton
+                        android:id="@+id/btn_Hora_Compra"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        app:backgroundTint="@null"
+                        android:background="@color/zxing_transparent"
+                        android:src="@drawable/ic_hours_compra"/>
+
+                    <EditText
+                        android:id="@+id/txt_Hora_Compra"
+                        style="@style/style_cajaTextos_Compra_Boleto_Fecha_Hora"
+                        android:background="@drawable/caja_texto_datos_compra"
+                        android:hint="Hora"
+                        android:enabled="false"/>
+                </LinearLayout>
+
+                <!-- CAMPO FECHA
+                <DatePicker
+                    android:id="@+id/dtp_Fecha_Compra_Boleto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:calendarTextColor="@color/black"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"/>
+                -->
+
+                <!-- CAMPO HORA
+                <TimePicker
+                    android:id="@+id/tmp_Hora_Compra_Boleto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:numbersTextColor="@color/black"
+                    android:layout_marginTop="15dp"/>
+                 -->
+
+                <!-- CAMPO HORA
+                <EditText
+                    android:id="@+id/txt_Hora_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:background="@drawable/radio_caja_texto_registro"
+                    android:hint="Hora"
+                    android:inputType="text"/>
+                    -->
+
+                <!-- TEXTO METODO DE PAGO -->
+                <TextView
+                    android:id="@+id/txt_Metodo_Pago_Compra_Boleto_Descripcion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Metodo de pago"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <!-- CAMPO METODO PAGO -->
+                <EditText
+                    android:id="@+id/txt_Metodo_Pago_Compra_Boleto"
+                    style="@style/style_cajaTextos_Compra_Boleto"
+                    android:background="@drawable/caja_texto_datos_compra"
+                    android:hint="Metodo de pago"
+                    android:inputType="text"/>
+
+                <!-- BOTON DE GUARDAR Y/O COMPRAR -->
+                <Button
+                    android:id="@+id/btn_Compra_Boleto"
+                    style="@style/btn_Estilo_Compra_Boleto"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btn_registro"
+                    android:text="Realizar Compra"/>
+
+                <TextView
+                    android:id="@+id/txt_Recibir_Datos_QR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <ImageView
+                    android:id="@+id/img_Datos_Codigo_QR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

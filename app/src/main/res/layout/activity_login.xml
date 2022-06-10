@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <!-- TITULO -->
+    <TextView
+        android:id="@+id/txt_Titulo_Login"
+        style="@style/style_title_text"
+        android:text="@string/str_txt_iniciarS" />
+
+    <!-- IMAGEN LOGO -->
+    <ImageView
+        android:id="@+id/img_Logo_Login"
+        style="@style/style_Img_Login"
+        android:layout_below="@id/txt_Titulo_Login"
+        android:src="@drawable/ic_fondo_login_plantilla" />
+
+    <LinearLayout
+        android:id="@+id/contenedor_Datos_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/img_Logo_Login">
+
+        <!-- CAMPO EMAIL -->
+        <EditText
+            android:id="@+id/txt_Email"
+            style="@style/style_cajaTextosLogin"
+            android:hint="@string/str_txt_Email"
+            android:background="@drawable/radio_caja_texto_login"
+            android:inputType="textEmailAddress"
+            android:drawableStart="@drawable/ic_email"/>
+
+        <!-- CAMPO CONTRASEÑA -->
+        <EditText
+            android:id="@+id/txt_Password"
+            style="@style/style_cajaTextosLogin"
+            android:background="@drawable/radio_caja_texto_login"
+            android:hint="@string/str_txt_Contraseña"
+            android:inputType="textPassword"
+            android:drawableStart="@drawable/ic_pass"/>
+
+        <!-- BOTON DE GUARDAR Y/O REGISTRARSE -->
+        <Button
+            android:id="@+id/btn_Iniciar_Sesion"
+            style="@style/btn_Estilo_Registro"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_iniciar_session"
+            android:text="@string/str_txt_Entrar"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            style="@style/view_divider_login"
+            android:layout_below="@+id/grd_Ajustes_Perfil">
+        </View>
+
+        <Button
+            android:id="@+id/btn_Iniciar_Google"
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@drawable/ic_btn_google_sing_min"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Google"
+            android:textColor="@color/black"
+            android:background="@drawable/btn_iniciar_session_google"
+            app:backgroundTint="@null"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_Iniciar_Facebook"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:drawableStart="@drawable/ic_btn_facebook_sing"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:text="Facebbok"
+            android:textColor="@color/black"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_iniciar_session_facebbok"
+            android:layout_gravity="center"/>
+        <!-- COLOR DE FONDO DE FACEBOOK #3F51B5 -->
+
+        <!-- TEXTO DE SI NO TIENES CUENTA -->
+        <TextView
+            android:id="@+id/txt_Registrate_Aqui"
+            style="@style/txt_Estilo_Si_No_Tienes_Cuenta"
+            android:text="@string/txt_No_Tienes_Cuenta"/>
+
+        <!-- TEXTO DE REGISTRATE AQUI -->
+        <TextView
+            android:id="@+id/txt_Registrate"
+            style="@style/txt_Estilo_Registrate_Aqui"
+            android:text="@string/txt_Registrate_Aqui"/>
+    </LinearLayout>
+
+</RelativeLayout>

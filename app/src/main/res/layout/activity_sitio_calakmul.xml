@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_sitio_calakmul">
+
+    <ImageView
+        android:id="@+id/img_fondo_base_sitio_calakmul"
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/banner"/>
+
+    <ImageView
+        android:id="@+id/img_Titulo_Calakmul"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:srcCompat="@drawable/ic_titulo_sitio_calakmul"
+        android:layout_below="@id/img_fondo_base_sitio_calakmul"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Zonas_Arquelogicas"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/color_fondo_card_settings"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:id="@+id/rlt_Zonas_Arquealogicas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fondo_card_settings">
+
+            <TextView
+                android:id="@+id/txt_Zonas_Arquealogicas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boogaloo"
+                android:text="ZONAS ARQUEOLOGICAS"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/img_Zonas_Arquealogicas"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_option_zona_arquelogica_sitio_calakmul" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Restaurantes"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/color_fondo_card_settings"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/card_Zonas_Arquelogicas">
+
+        <RelativeLayout
+            android:id="@+id/rlt_Restaurantes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fondo_card_settings">
+
+            <TextView
+                android:id="@+id/txt_Restaurantes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boogaloo"
+                android:text="RESTAURANTES"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/img_Restaurantes"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_option_restaurante_sitio_calakmul" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_Galerias"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        app:cardBackgroundColor="@color/color_fondo_card_settings"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_below="@id/card_Restaurantes">
+
+        <RelativeLayout
+            android:id="@+id/rlt_Galerias"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_fondo_card_settings">
+
+            <TextView
+                android:id="@+id/txt_Galerias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boogaloo"
+                android:text="GALERIAS CALAKMUL"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="15dp"/>
+
+            <ImageView
+                android:id="@+id/img_Galerias"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/ic_option_galeria_sitio_calakmul" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
